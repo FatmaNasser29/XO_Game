@@ -22,7 +22,7 @@ class _HomescreenState extends State<Homescreen> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.red,
+          backgroundColor: Color.fromRGBO(80, 150, 145, 1),
           title: Text(
             "X and O   Game",
             style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
@@ -119,7 +119,6 @@ class _HomescreenState extends State<Homescreen> {
     if (counter == 9) {
       reset();
     }
-
     setState(() {});
   }
 

@@ -71,8 +71,8 @@ class LoginScreen extends StatelessWidget {
                   height: 50,
                 ),
                 ElevatedButton(
-                  style:
-                      ElevatedButton.styleFrom(backgroundColor: Colors.black),
+                  style: ElevatedButton.styleFrom(
+                      backgroundColor: Color.fromRGBO(80, 150, 145, 1)),
                   onPressed: () {
                     PlayerModel model = PlayerModel(name1, name2);
                     Navigator.pushNamed(context, Homescreen.roureName,
