@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:xo_game/homeScreen.dart';
+import 'package:xo_game/login_screen.dart';
 
 void main() {
   runApp(const XoGame());
@@ -15,8 +16,9 @@ class XoGame extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(),
         routes: {
+          LoginScreen.routeName: (context) => LoginScreen(),
           Homescreen.roureName: (context) => Homescreen(),
         },
-        initialRoute: Homescreen.roureName);
+        initialRoute: LoginScreen.routeName);
   }
 }
